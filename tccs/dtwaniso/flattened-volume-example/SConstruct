@@ -1,9 +1,0 @@
-from rsf.proj import *
-# script for generating boxes
-specplts = ['spec-zm-1','spec-zm-2']
-Plot('spec-box1',None,'sfbox pointer=n x0=5.58 y0=8.5 boxit=n label="Input" ')
-Plot('spec-box2',None,'sfbox pointer=n x0=6 y0=8 boxit=y label="Flattened" ')
-for spec in specplts:
-    Plot(spec+'-box',[spec,'spec-box1','spec-box2'],'Overlay')
-
-End()
